@@ -1,0 +1,10 @@
+# Ignore compiled class files and temp files
+*.class
+*.jar
+*.exe
+*.log
+*.tmp
+*~
+tempCodeRunnerFile.java
+.DS_Store
+Thumbs.db
