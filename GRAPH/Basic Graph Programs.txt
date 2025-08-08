@@ -1,0 +1,45 @@
+/*Basic Graph Programs 
+
+Graph Representation
+
+1.Graph Representation using Adjacency Matrix
+2.Graph Representation using Adjacency List
+3.Add and Remove Edges in a Graph
+
+Graph Traversals
+
+1.BFS Traversal of a Graph
+2.DFS Traversal of a Graph
+3.Level Order Traversal in a Tree using BFS
+
+Cycle Detection
+
+1.Detect Cycle in an Undirected Graph (DFS/BFS)
+2.Detect Cycle in a Directed Graph 
+
+Connectivity
+
+1.Count the Number of Connected Components in a Graph
+2.Check if the Graph is a Tree
+
+Path-Based Problems
+
+1.Shortest Path in an Unweighted Graph using BFS
+
+2.Print All Paths from Source to Destination (DFS)
+
+Minimum Spanning Tree
+
+1.Minimum Spanning Tree using Kruskal’s or Prim’s Algorithm
+
+Grid / Matrix-based Graph Problems
+
+1.Number of Islands using BFS
+
+2.Number of Islands using DFS 
+
+Graph Copy & Simulation
+
+1.Clone a Graph using BFS or DFS
+
+*/

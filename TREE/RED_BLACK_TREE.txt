@@ -1,0 +1,7 @@
+1. if the tree is empty,new node will be inserted as black
+2. if the tree is not empty, create new node as leaf node with red colour
+3. check if parent node is black then exit
+4. if parent of new ndoe is red,then check the sibings node colour
+5.if the colour is black or null then do suitable rotation and recolour
+    -->if colour is red then refactor and also check it's parent's parent of new node is not new node then colour it and recheck
+    
