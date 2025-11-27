@@ -3,10 +3,7 @@ public class BFS
 {
     public static void main(String[] args) 
     {
-         int[][] edgeList = {{0, 1},{0, 2},{2, 3},{1, 3},
-                            {3, 4},{4, 5},{5, 6},{6, 7},
-                            {7, 8},{8, 9},{9, 10},{10, 11},
-                            {11, 12},{12, 13},{13, 14}};
+         int[][] edgeList = {{0,1},{1,2},{2,3},{2,4},{4,3}};
 
         HashMap<Integer, ArrayList<Integer>> map = new HashMap<>();
         for(int i = 0; i < edgeList.length; i++)
@@ -18,9 +15,9 @@ public class BFS
                 map.put(u, new ArrayList<>());
             map.get(u).add(v);
 
-            if(!map.containsKey(v))
-                map.put(v, new ArrayList<>());
-            map.get(v).add(u);
+            // if(!map.containsKey(v))
+            //     map.put(v, new ArrayList<>());
+            // map.get(v).add(u);
         }
 
         System.out.println("Adjacency List: " + map);
@@ -32,6 +29,11 @@ public class BFS
         while(!queue.isEmpty())
         {
             int node = queue.poll();
+            if(visited.contains(node))
+            {
+                System.out.println("Cycle detected");
+                break;
+            }
             System.out.print(node + " ");
             for(int i : map.get(node))
             {
